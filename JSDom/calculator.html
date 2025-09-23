@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <style>
+    
+      
+    </style>
+    </head>
+    <body>
+        <div id="calculator-container" class="bg-gray-100 p-8 rounded-2xl shadow-xl w-full max-w-sm">
+ <script>
+const container = document.createElement("div");
+const buttonCC = document.createElement("button");
+const buttonClear = document.createElement("button");
+const buttonMultifly = document.createElement("button");
+const buttonTimes = document.createElement("button");
+const button7 = document.createElement("button");
+const button8 = document.createElement("button");
+const button9 = document.createElement("button");
+const buttonMinus = document.createElement("button");
+const button4 = document.createElement("button");
+const button5 = document.createElement("button");
+const button6 = document.createElement("button");
+const button1 = document.createElement("button");
+const button2 = document.createElement("button");
+const button3 = document.createElement("button");
+const buttonEqual = document.createElement("button");
+const button0 = document.createElement("button");
+const buttonDot = document.createElement("button");
+
+button0.innerHTML = "0";
+buttonDot.innerHTML = ".";
+button1.innerHTML = "1";
+button2.innerHTML = "2";
+button3.innerHTML = "3";
+button4.innerHTML = "4";
+button5.innerHTML = "5";
+button6.innerHTML = "6";
+button7.innerHTML = "7";
+button8.innerHTML = "8";
+button9.innerHTML = "9";
+buttonClear.innerHTML = "C";
+buttonClear.innerHTML = "CC";
+buttonMultifly.innerHTML = "*";
+buttonTimes.innerHTML = "+";
+buttonMinus.innerHTML = "-";
+buttonEqual.innerHTML = "=";       
+
+document.body.appendChild(buttonCC);
+document.body.appendChild(buttonClear);
+document.body.appendChild(buttonMultifly);
+document.body.appendChild(buttonTimes);
+document.body.appendChild(button7);
+document.body.appendChild(button8);
+document.body.appendChild(button9);
+document.body.appendChild(buttonMinus);
+document.body.appendChild(button4);
+document.body.appendChild(button5);
+document.body.appendChild(button6);
+document.body.appendChild(button1);
+document.body.appendChild(button2);
+document.body.appendChild(button3);
+document.body.appendChild(buttonEqual);
+document.body.appendChild(button0);
+document.body.appendChild(buttonDot);
+document.body.appendChild(container);
+
+const input = document.createElement("input");
+document.body.insertBefore(input, buttonCC);
+input.setAttribute("type", "number");
+input.setAttribute("id", "result");     
+
+
+</script>
+
+    </body>
+</html>
