@@ -1,48 +1,40 @@
-body{
-    width: 600px;
-    height: 800px;
-    border: 1px solid black ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-      display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-
-
-}
-
-.calculator{
-    width: 400px;
-    height: 500px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(179, 179, 179);
-    border-radius: 10px;
-}
-button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    margin: 10px;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 5px grey;
- 
-}
-button:active{
-    box-shadow: none;
-}   
-input{
-    width: 350px;
-    height: 50px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    text-align: right;  
-    border-radius: 10px;
-    padding-right: 10px;
-}
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f3f4f6;
+        font-family: sans-serif;
+    }
+    #calculator-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    input {
+        grid-column: span 4;
+        height: 50px;
+        text-align: right;
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        padding: 20px;
+        font-size: 1.2rem;
+        border: none;
+        background: #e5e7eb;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    button:hover { background: #d1d5db; }
+    .operator { background: #fbbf24; color: white; }
+    .equals { background: #3b82f6; color: white; grid-row: span 2; }
+</style>
